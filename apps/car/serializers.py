@@ -13,8 +13,8 @@ class CarSerializer(serializers.ModelSerializer):
     class Meta:
         model = CarModel
         fields = ('id', 'brand', 'model', 'year', 'user')
-        extra_kwargs = {
-            'user': {"write_only": True}
-        }
+        # extra_kwargs = {
+        #     'user': {"write_only": True}
+        # }
         # fields = '__all__'
         # exclude = ('user')
